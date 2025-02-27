@@ -12,16 +12,18 @@ const Header = () => {
   return (
     <>
       <Navbar bg="light" data-bs-theme="light">
-        <Container>
-          <Navbar.Brand href="/">
+        <Container className="mt-1 mb-2" style={{ left: 0, marginLeft: "20px"}}>
+          <Navbar.Brand href="/" >
             <Image alt="" src="/src/images/sample.webp" width="30" height="30" className="d-inline-block align-top" />{' '}
             영화리뷰사이트
           </Navbar.Brand>
-          <Nav className="me-auto">
+          <Nav className="me-auto" >
             <Nav.Link href="/ML">영화목록</Nav.Link>
             <Nav.Link href="/CG">카테고리</Nav.Link>
             <Nav.Link href="/RR">최신리뷰</Nav.Link>
             <Nav.Link href="/WR">리뷰작성</Nav.Link>
+          </Nav>
+          <Nav className="ml-auto" style={{position: 'absolute', right: 0, marginRight: "30px"}}>
             <Button variant="light" onClick={handleShow}>
               로그인
             </Button>
