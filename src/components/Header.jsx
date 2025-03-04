@@ -1,91 +1,61 @@
-import { useState } from 'react';
-import { Button, Container, Form, Image, Modal, Nav, Navbar } from 'react-bootstrap';
+import {useState} from "react";
+import { Navbar, Container, Nav, Form, FormControl, Button } from "react-bootstrap";
+import { FaSearch, FaBars } from "react-icons/fa";
+
 
 const Header = () => {
-  //로고(홈버튼), 메뉴바, 검색, 로그인, 회원가입 등
-  //메뉴바 : 영화목록, 최신리뷰, 카테고리, 리뷰 작성 등
-  //-->아이디어 있으면 바꿔도 됨
-  const [show, setShow] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false); // 햄버거 메뉴 상태 관리
 
-  const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
+
   return (
     <>
-      <Navbar bg="light" data-bs-theme="light">
-        <Container className="mt-1 mb-2" style={{ left: 0, marginLeft: "20px"}}>
-          <Navbar.Brand href="/" >
-            <Image alt="" src="/src/images/sample.webp" width="30" height="30" className="d-inline-block align-top" />{' '}
-            영화리뷰사이트
-          </Navbar.Brand>
-          <Nav className="me-auto" >
-            <Nav.Link href="/ML">영화목록</Nav.Link>
-            <Nav.Link href="/CG">카테고리</Nav.Link>
-            <Nav.Link href="/RR">최신리뷰</Nav.Link>
-            <Nav.Link href="/WR">리뷰작성</Nav.Link>
-          </Nav>
-          <Nav className="ml-auto" style={{position: 'absolute', right: 0, marginRight: "30px"}}>
-            <Button variant="light" onClick={handleShow}>
-              로그인
-            </Button>
+    <Navbar expand="lg" className="navbar">
+      <Container className="navbar-container">
+        {/* 좌측 로고 */}
+        <Navbar.Brand href="/" className="logo">
+          <img src="/src/images/movielogo.png" alt="Logo" className="logo-icon" />
+          <span className="logo-text">ReMovie</span>
+        </Navbar.Brand>
 
-            <Modal show={show} onHide={handleClose}>
-              <Modal.Header closeButton>
-                <Modal.Title>Modal heading</Modal.Title>
-              </Modal.Header>
-              <Modal.Body>
-                <Form>
-                  <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-                    <Form.Label>Email address</Form.Label>
-                    <Form.Control type="email" placeholder="name@example.com" autoFocus />
-                  </Form.Group>
-                  <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
-                    <Form.Label>Example textarea</Form.Label>
-                    <Form.Control as="textarea" rows={3} />
-                  </Form.Group>
-                </Form>
-              </Modal.Body>
-              <Modal.Footer>
-                <Button variant="secondary" onClick={handleClose}>
-                  Close
-                </Button>
-                <Button variant="primary" onClick={handleClose}>
-                  Save Changes
-                </Button>
-              </Modal.Footer>
-            </Modal>
-            <Button variant="light" onClick={handleShow}>
-              회원가입
-            </Button>
+        {/* 가운데 검색창 */}
+        <Form className="search-form">
+          <FormControl
+            type="text"
+            placeholder="검색어를 입력해 주세요"
+            className="search-input"
+          />
+          <Button variant="outline-light" className="search-btn">
+            <FaSearch /> {/*  돋보기 아이콘 */}
+          </Button>
+        </Form>
 
-            <Modal show={show} onHide={handleClose}>
-              <Modal.Header closeButton>
-                <Modal.Title>Modal heading</Modal.Title>
-              </Modal.Header>
-              <Modal.Body>
-                <Form>
-                  <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-                    <Form.Label>Email address</Form.Label>
-                    <Form.Control type="email" placeholder="name@example.com" autoFocus />
-                  </Form.Group>
-                  <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
-                    <Form.Label>Example textarea</Form.Label>
-                    <Form.Control as="textarea" rows={3} />
-                  </Form.Group>
-                </Form>
-              </Modal.Body>
-              <Modal.Footer>
-                <Button variant="secondary" onClick={handleClose}>
-                  Close
-                </Button>
-                <Button variant="primary" onClick={handleClose}>
-                  Save Changes
-                </Button>
-              </Modal.Footer>
-            </Modal>
-          </Nav>
-        </Container>
-      </Navbar>
+        {/* 우측 로그인 & 햄버거 메뉴 */}
+        <div className="nav-right">
+          <Nav.Link href="#" className="login-btn">로그인</Nav.Link>
+          <Button variant="outline-light" className="menu-btn" onClick={toggleMenu}>
+            <FaBars />  {/*  햄버거 메뉴 아이콘 */}
+          </Button> 
+        </div>
+      </Container>
+    </Navbar> 
+
+          {/* ✅ 햄버거 버튼 클릭 시 펼쳐지는 메뉴 */}
+      <div className={`hamburger-menu ${menuOpen ? "open" : ""}`}>
+        <ul>
+          <li><Nav.Link href="/ML">🎬 영화목록</Nav.Link></li>
+          <li><Nav.Link href="/RR">🆕 최신리뷰</Nav.Link></li>
+          <li><Nav.Link href="/CG">📂 카테고리</Nav.Link></li>
+          <li><Nav.Link href="/WR">✍ 리뷰 작성</Nav.Link></li>
+        </ul>
+      </div>
+
     </>
+
+    
+    
   );
 };
 
