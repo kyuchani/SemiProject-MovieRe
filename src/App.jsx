@@ -4,7 +4,8 @@ import './App.css';
 
 import Header from './components/Header';
 // import Footer from './components/Footer';
-import Main from './pages/Main';
+import Login from './pages/LoginPage';
+import Main from './pages/HomePage';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <hr />
         <Routes>
           <Route path="/" element={<Main />} />
+          <Route path="/Login" element={<Login />} />
         </Routes>
         {/* <Footer /> */}
       </BrowserRouter>

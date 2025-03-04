@@ -1,4 +1,4 @@
-import {useState} from "react";
+import  {useState} from "react";
 import { Navbar, Container, Nav, Form, FormControl, Button } from "react-bootstrap";
 import { FaSearch, FaBars } from "react-icons/fa";
 
@@ -34,7 +34,7 @@ const Header = () => {
 
         {/* 우측 로그인 & 햄버거 메뉴 */}
         <div className="nav-right">
-          <Nav.Link href="#" className="login-btn">로그인</Nav.Link>
+          <Nav.Link href="/Login" className="login-btn">로그인</Nav.Link>
           <Button variant="outline-light" className="menu-btn" onClick={toggleMenu}>
             <FaBars />  {/*  햄버거 메뉴 아이콘 */}
           </Button> 
