@@ -1,0 +1,43 @@
+/* 푸터 스타일 */
+.footer {
+  background-color: black;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  width: 100%;
+  position: relative;
+  margin-top: 0;
+}
+
+/* 푸터 내용 스타일 */
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-social{
+  margin-bottom: 20px;
+}
+
+/* 링크 스타일 */
+.footer-links a,
+.footer-social a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+/* 링크 hover 시 스타일 */
+.footer-links a:hover,
+.footer-social a:hover {
+  text-decoration: underline;
+}
+
+/* 저작권 스타일 */
+.footer-copy {
+  margin-top: 10px;
+  font-size: 14px;
+  color: gray;
+}

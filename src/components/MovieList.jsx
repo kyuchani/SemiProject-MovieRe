@@ -46,13 +46,13 @@ const MovieList = () => {
 
   const scrollLeftHandler = (index) => {
     if (listRefs.current[index]) {
-      listRefs.current[index].scrollBy({ left: -180, behavior: 'smooth' });
+      listRefs.current[index].scrollBy({ left: -205, behavior: 'smooth' });
     }
   };
 
   const scrollRightHandler = (index) => {
     if (listRefs.current[index]) {
-      listRefs.current[index].scrollBy({ left: 180, behavior: 'smooth' });
+      listRefs.current[index].scrollBy({ left: 205, behavior: 'smooth' });
     }
   };
 

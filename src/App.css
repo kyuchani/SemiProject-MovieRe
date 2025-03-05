@@ -37,11 +37,13 @@ header {
 
 /* ✅ 메인 레이아웃 조정 */
 .main-container {
+  width: 100%;
   display: flex;
   justify-content: center; /* 전체 중앙 정렬 */
   max-width: 1440px; /* 데스크톱 크기에 맞춤 */
   margin: 0 auto;
   padding-top: 20px;
+  margin-bottom: -50px;
 }
 
 /* ✅ 사이드바와 콘텐츠 정렬 */
@@ -61,6 +63,7 @@ header {
   position: relative;
   width: 100%;
   max-width: 1440px;
+  padding-bottom: 40px;
 }
 
 /* ✅ 슬라이드 이미지 크기 조정 */
@@ -109,7 +112,7 @@ header {
 .movie-list {
   display: flex;
   overflow-x: auto;
-  gap: 20px; /* 영화 아이템 간 간격 증가 */
+  gap: 13px; /* 영화 아이템 간 간격 증가 */
   scrollbar-width: none;
   -ms-overflow-style: none;
   scroll-behavior: smooth;
@@ -140,7 +143,7 @@ header {
 /* ✅ 좌우 화살표 버튼 위치 조정 */
 .scroll-btn {
   position: absolute;
-  top: 50%;
+  top: 40%;
   transform: translateY(-50%);
   background-color: rgba(0, 0, 0, 0.5);
   border: none;
@@ -158,11 +161,11 @@ header {
 }
 
 .scroll-btn.left {
-  left: -50px;
+  left: -60px;
 }
 
 .scroll-btn.right {
-  right: -50px;
+  right: -60px;
 }
 
 /* ✅ 네비게이션 바 중앙 정렬 */
@@ -336,49 +339,7 @@ header {
   border-radius: 5px;
 }
 
-/* 푸터 스타일 */
-.footer {
-  background-color: black;
-  color: white;
-  padding: 20px 0;
-  text-align: center;
-  width: 100%;
-  position: relative;
-  margin-top: 0;
-}
 
-/* 푸터 내용 스타일 */
-.footer-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.footer-social{
-  margin-bottom: 15px;
-}
-
-/* 링크 스타일 */
-.footer-links a,
-.footer-social a {
-  color: white;
-  text-decoration: none;
-  margin: 0 10px;
-}
-
-/* 링크 hover 시 스타일 */
-.footer-links a:hover,
-.footer-social a:hover {
-  text-decoration: underline;
-}
-
-/* 저작권 스타일 */
-.footer-copy {
-  margin-top: 10px;
-  font-size: 14px;
-  color: gray;
-}
 
 /* Link 기본 스타일 제거 */
 a {
