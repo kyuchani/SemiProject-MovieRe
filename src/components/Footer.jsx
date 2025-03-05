@@ -1,23 +1,31 @@
-import { Card } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+import { FaFacebook, FaInstagram, FaTwitter, FaYoutube } from 'react-icons/fa';
 
 const Footer = () => {
-  //copyrigth 등등
-
   return (
-    <>
-      <Card>
-        <Card.Header>Quote</Card.Header>
-        <Card.Body>
-          <blockquote className="blockquote mb-0" >
-            <Link href="#">a</Link>
-            <footer className="blockquote-footer">
-              Someone famous in <cite title="Source Title">Source Title</cite>
-            </footer>
-          </blockquote>
-        </Card.Body>
-      </Card>
-    </>
+    <footer className="footer">
+      <div className="footer-content">
+        <div className="footer-social">
+          <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+            <FaFacebook size={24} /> {/* 아이콘 크기 조절 */}
+          </a>
+          <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+            <FaInstagram size={24} />
+          </a>
+          <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
+            <FaTwitter size={24} />
+          </a>
+          <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer">
+            <FaYoutube size={24} />
+          </a>
+        </div>
+        <div className="footer-links">
+          <a href="#">이용약관</a>
+          <a href="#">개인정보처리방침</a>
+          <a href="#">문의하기</a>
+        </div>
+        <div className="footer-copy">&copy; 2025 ReMovie. All rights reserved.</div>
+      </div>
+    </footer>
   );
 };
 

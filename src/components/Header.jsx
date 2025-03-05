@@ -1,4 +1,4 @@
-import  {useState} from "react";
+import {useState} from "react";
 import { Navbar, Container, Nav, Form, FormControl, Button } from "react-bootstrap";
 import { FaSearch, FaBars } from "react-icons/fa";
 
@@ -45,10 +45,9 @@ const Header = () => {
           {/* ✅ 햄버거 버튼 클릭 시 펼쳐지는 메뉴 */}
       <div className={`hamburger-menu ${menuOpen ? "open" : ""}`}>
         <ul>
-          <li><Nav.Link href="/ML">🎬 영화목록</Nav.Link></li>
-          <li><Nav.Link href="/RR">🆕 최신리뷰</Nav.Link></li>
-          <li><Nav.Link href="/CG">📂 카테고리</Nav.Link></li>
-          <li><Nav.Link href="/WR">✍ 리뷰 작성</Nav.Link></li>
+        <li><Nav.Link href="#">🎬 박스 오피스</Nav.Link></li>
+          <li><Nav.Link href="#">🆕 상영 예정작</Nav.Link></li>
+          <li><Nav.Link href="#">✍ 높은 별점</Nav.Link></li>
         </ul>
       </div>
 
