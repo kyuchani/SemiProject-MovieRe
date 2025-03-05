@@ -3,55 +3,55 @@
       "id": "johnwick3",
       "title": "존 윅 3: 파라벨룸",
       "titleEng": "John Wick: Chapter 3 - Parabellum",
-      "poster": "/images/jhonwick3poster.jpeg",
+      "poster": "/src/images/jhonwick3poster.jpeg",
       "trailer": "https://www.youtube.com/embed/M7XM597XO94",
       "description": "전설이 된 킬러 '존 윅' (키아누 리브스). 룰을 어긴 죄로 그에게 현상금 1,400만 불이 붙고, 전 세계 모든 킬러의 총구가 그를 향한다. 국제암살자연맹의 파문 조치가 내려진 그는 아무런 보호도 받지 못한 채 시시각각 위험에 직면하고 결국, 마지막 전쟁을 위해 '소피아'(할리 베리)를 찾아가는데… 출구는 없다. 평화를 원한다면, 전쟁을 준비하라.",
       "information1": "2025 · 모험/드라마/SF · 미국",
       "information2": "2시간 11분 · 전체",
       "scenes": [
-          "/images/johnwick3_scene1.jpg",
-          "/images/johnwick3_scene2.jpg",
-          "/images/johnwick3_scene3.jpg",
-          "/images/johnwick3_scene4.jpg"
+          "/src/images/johnwick3_scene1.jpg",
+          "/src/images/johnwick3_scene2.jpg",
+          "/src/images/johnwick3_scene3.jpg",
+          "/src/images/johnwick3_scene4.jpg"
       ]
   },
   {
       "id": "captain",
       "title": "캡틴아메리카: 브레이브 뉴 월드",
       "titleEng": "Captain America: Brave New World",
-      "poster": "/images/captainposter.jpeg",
+      "poster": "/src/images/captainposter.jpeg",
       "trailer": "https://www.youtube.com/embed/1pHDWnXmK7Y",
       "description": "대통령이 된 새디우스 로스와 재회 후, 국제적인 사건의 중심에 서게 된 샘이 전 세계를 붉게 장악하려는 사악한 음모 뒤에 숨겨진 존재와 이유를 파헤쳐 나가는 액션 블록버스터",
       "information1": "2025 · 모험/드라마/SF · 미국",
       "information2": "1시간 58분 · 12세",
       "scenes": [
-          "/images/captain_scene1.jpg",
-          "/images/captain_scene2.jpg",
-          "/images/captain_scene3.jpg",
-          "/images/captain_scene4.jpg"
+          "/src/images/captain_scene1.jpg",
+          "/src/images/captain_scene2.jpg",
+          "/src/images/captain_scene3.jpg",
+          "/src/images/captain_scene4.jpg"
       ],
       "cast": [
-          "/images/captain_director.jpg",
-          "/images/captain_cast1.jpg",
-          "/images/captain_cast2.jpg",
-          "/images/captain_cast3.jpg",
-          "/images/captain_cast4.jpg"
+          "/src/images/captain_director.jpg",
+          "/src/images/captain_cast1.jpg",
+          "/src/images/captain_cast2.jpg",
+          "/src/images/captain_cast3.jpg",
+          "/src/images/captain_cast4.jpg"
       ]
   },
   {
       "id": "mickey",
       "title": "미키 17",
       "titleEng": "Mickey 17",
-      "poster": "/images/mickeyposter.jpeg",
+      "poster": "/src/images/mickeyposter.jpeg",
       "trailer": "https://www.youtube.com/watch?v=tA1s65o_kYM&t=1s",
       "description": "위험한 일에 투입되는 소모품(익스펜더블)으로, 죽으면 다시 프린트되는 ‘미키’가 17번째 죽음의 위기를 겪던 중, 그가 죽은 줄 알고 ‘미키 18’이 프린트되면서 벌어지는 예측불허의 이야기를 그리는 영화",
       "information1": "2025 · 모험/드라마/SF · 미국",
       "information2": "2시간 19분 · 15세",
       "scenes": [
-          "/images/mickey17_scene1.jpg",
-          "/images/mickey17_scene2.jpg",
-          "/images/mickey17_scene3.jpg",
-          "/images/mickey17_scene4.jpg"
+          "/src/images/mickey17_scene1.jpg",
+          "/src/images/mickey17_scene2.jpg",
+          "/src/images/mickey17_scene3.jpg",
+          "/src/images/mickey17_scene4.jpg"
       ]
   }
 ]
