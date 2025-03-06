@@ -2,11 +2,14 @@
 .footer {
   background-color: black;
   color: white;
-  padding: 20px 0;
+  padding: 20px 50px;
+  margin-left: auto;
+  margin-right: auto;
   text-align: center;
-  width: 100%;
+  width: 75%;
   position: relative;
-  margin-top: 0;
+  margin-top: 50px;
+  border-top: 1px solid rgb(99, 97, 97) ; /* 하얀색 밑줄 */
 }
 
 /* 푸터 내용 스타일 */
@@ -17,16 +20,26 @@
   justify-content: center;
 }
 
-.footer-social{
-  margin-bottom: 20px;
+.footer-social {
+  margin-bottom: 25px;
+  margin-top: 15px;
+}
+
+.footer-links {
+  margin-bottom: 5px;
 }
 
 /* 링크 스타일 */
-.footer-links a,
-.footer-social a {
+.footer-links span{
   color: white;
   text-decoration: none;
   margin: 0 10px;
+}
+
+.footer-social a {
+  color: white;
+  text-decoration: none;
+  margin: 0 18px;
 }
 
 /* 링크 hover 시 스타일 */

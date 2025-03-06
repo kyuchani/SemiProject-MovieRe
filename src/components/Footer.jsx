@@ -20,9 +20,20 @@ const Footer = () => {
           </a>
         </div>
         <div className="footer-links">
-          <a href="#">이용약관</a>
-          <a href="#">개인정보처리방침</a>
-          <a href="#">문의하기</a>
+          <a href="#">
+            <span>이용약관</span>
+            <span>|</span>
+          </a>
+
+          <a href="#">
+            <span>개인정보처리방침</span>
+            <span>|</span>
+          </a>
+
+          <a href="#">
+            <span>문의하기</span>
+            <span></span>
+          </a>
         </div>
         <div className="footer-copy">&copy; 2025 ReMovie. All rights reserved.</div>
       </div>

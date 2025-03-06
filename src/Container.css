@@ -1,0 +1,21 @@
+/* ✅ 컨테이너 중앙 정렬 */
+.Container {
+  background-color: black;
+  color: white;
+  width: 100%;
+  max-width: 1440px; /* 데스크톱 크기에 맞춤 */
+  min-height: 100vh; /* 전체 화면 높이를 유지 */
+  margin: 0 auto;
+  height: 100vh; /* Navbar 높이 제외 */
+}
+
+/* ✅ 메인 레이아웃 조정 */
+.main-container {
+  width: 100%;
+  display: flex;
+  justify-content: center; /* 전체 중앙 정렬 */
+  max-width: 1440px; /* 데스크톱 크기에 맞춤 */
+  margin: 0 auto;
+  padding-top: 20px;
+  margin-bottom: -50px;
+}

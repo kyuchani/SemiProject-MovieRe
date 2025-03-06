@@ -1,6 +1,6 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './App.css';
+import './Container.css';
 
 import Header from './components/Header';
 import Footer from './components/Footer';
@@ -10,6 +10,8 @@ import FindIdPage from './pages/FindIdPage';
 import SignupPage from './pages/SingupPage';
 import FindPasswordPage from './pages/FindPasswordPage';
 import MovieDetail from './components/MovieDetail';
+import ReviewPage from './pages/ReviewPage';
+import ReviewForm from './pages/ReviewForm';
 
 function App() {
   return (
@@ -23,6 +25,8 @@ function App() {
           <Route path="/find-password" element={<FindPasswordPage />} />
           <Route path="/sign-up" element={<SignupPage />} />
           <Route path="/detail/:movieId" element={<MovieDetail />} />
+          <Route path="/review" element={<ReviewPage />} />
+          <Route path="/review/write" element={<ReviewForm />} />
         </Routes>
         <Footer />
       </BrowserRouter>

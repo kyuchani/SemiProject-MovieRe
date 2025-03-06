@@ -1,0 +1,151 @@
+/* ✅ 전체 리뷰 페이지 컨테이너 */
+.review-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 20px;
+}
+
+/* ✅ 리뷰 목록 컨테이너 */
+.review-list-container {
+  max-width: 800px;
+  width: 700px;
+  padding: 20px;
+  background: #000;
+  color: white;
+  border-radius: 12px;
+  box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* ✅ 리뷰 헤더 (제목 + 작성 버튼) */
+.review-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding-bottom: 8px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.review-header h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+/* ✅ 리뷰 작성 버튼 */
+.review-header button {
+  background: red;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s ease-in-out;
+}
+
+.review-write-btn:hover {
+  background: darkred;
+}
+
+/* ✅ 리뷰 목록 */
+.review-list-container ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+  width: 100%;
+}
+
+/* ✅ 개별 리뷰 항목 */
+.review-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #111;
+  padding: 15px;
+  margin-bottom: 8px;
+  border-radius: 6px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: background 0.3s ease-in-out;
+}
+
+.review-item:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* ✅ 프로필 이미지 */
+.review-item img {
+  width: 80px;
+  height: 80px;
+  border-radius: 20%;
+  margin-right: 15px;
+}
+
+/* ✅ 리뷰 내용 (username + 텍스트) */
+.review-content {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  align-items: flex-start;
+  margin-left: 10px;
+}
+
+/* ✅ username */
+.review-username {
+  font-size: 14px;
+  font-weight: bold;
+  color: #ddd;
+  margin-bottom: 4px;
+}
+
+/* ✅ 리뷰 텍스트 */
+.review-text {
+  font-size: 15px;
+  color: #ddd;
+}
+
+
+/* 🌟 추천 / 비추천 버튼 스타일 */
+
+.review-vote {
+  display: flex;
+  gap: 5px;
+}
+
+.review-vote button {
+  background: #222;
+  color: white;
+  border: none;
+  padding: 5px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s ease-in-out;
+}
+
+.vote-btn:hover {
+  background: #444;
+}
+
+/* ✅ 추천/비추천 아이콘 크기 조정 */
+.vote-icon {
+  font-size: 14px;
+  margin-right: 5px;
+}
+/* ✅ 별점 표시 (리뷰 목록) */
+.review-rating {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 16px;
+  color: gold;
+  margin-top: 4px;
+}

@@ -1,7 +1,7 @@
 import {useState} from "react";
 import { Navbar, Container, Nav, Form, FormControl, Button } from "react-bootstrap";
 import { FaSearch, FaBars } from "react-icons/fa";
-
+import "./Header.css"
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false); // 햄버거 메뉴 상태 관리
