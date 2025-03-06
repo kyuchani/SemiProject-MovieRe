@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'; // ✅ React Router의 Link 컴포넌�
 import "./MovieList.css"
 
 const moviesData = {
-  '박스오피스 순위': [
+  '🎬 박스오피스 순위': [
     { title: '미키 17', image: '/src/images/mickeyposter.jpeg', link: '/detail/mickey', audience: '1,000,000' },
     { title: '퇴마록', image: '/src/images/lok.jpeg', link: '/detail/lok', audience: '900,000' },
     { title: '캡틴아메리카', image: '/src/images/captainposter.jpeg', link: '/detail/captain', audience: '800,000' },
@@ -14,7 +14,7 @@ const moviesData = {
     { title: '컴플리트 언노운', image: '/src/images/unknown.jpeg', link: '/detail/unknown', audience: '550,000' },
     { title: '첫 번째 키스', image: '/src/images/first-kiss.jpeg', link: '/deatil/first-kiss', audience: '500,000' },
   ],
-  '상영예정작': [
+  '🆕 상영예정작': [
     { title: '플레이브 대쉬 인시네마', image: '/src/images/dash.jpeg', link: '/detail/dash', releaseDate: '2025-03-10' },
     { title: '화이트 버드', image: '/src/images/whitebird.jpeg', link: '/detail/whitebird', releaseDate: '2025-03-15' },
     { title: '위플래쉬', image: '/src/images/whiplash.jpeg', link: '/detail/whiplash', releaseDate: '2025-03-20' },
@@ -25,7 +25,7 @@ const moviesData = {
     { title: '와일드 투어', image: '/src/images/wildtour.jpeg', link: '/detail/wildtour', releaseDate: '2025-04-10' },
     { title: '호조', image: '/src/images/hozo.jpeg', link: '/detail/hozo', releaseDate: '2025-04-12' },
   ],
-  '별점이 높은 작품': [
+  '🌟 별점이 높은 작품': [
     { title: '이찬원 콘서트 찬가: 디어 마이 찬스', image: '/src/images/Lee.jpg', link: 'detail.Lee', rating: '4.9' },
     { title: '힘내라 대한민국', image: '/src/images/fighting-korea.jpeg', link: '/detail/korea', rating: '4.7' },
     { title: '퇴마록', image: '/src/images/lok.jpeg', link: '/detail/lok', rating: '4.6' },
@@ -47,13 +47,13 @@ const MovieList = () => {
 
   const scrollLeftHandler = (index) => {
     if (listRefs.current[index]) {
-      listRefs.current[index].scrollBy({ left: -240, behavior: 'smooth' });
+      listRefs.current[index].scrollBy({ left: -840, behavior: 'smooth' });
     }
   };
 
   const scrollRightHandler = (index) => {
     if (listRefs.current[index]) {
-      listRefs.current[index].scrollBy({ left: 240, behavior: 'smooth' });
+      listRefs.current[index].scrollBy({ left: 840, behavior: 'smooth' });
     }
   };
 
@@ -104,9 +104,9 @@ const MovieList = () => {
                     <p className='movieTitle'>{movie.title}</p>
                     {/* 여기에서 카테고리별 추가 정보를 출력합니다 */}
                     <span className='category'>
-                    {category === '박스오피스 순위' && <p>누적 관객수: {movie.audience}</p>}
-                    {(category === '상영예정작' ) && <p>{movie.releaseDate} 개봉</p>}
-                    {(category === '별점이 높은 작품' ) && <p>⭐ {movie.rating}</p>}
+                    {category === '🎬 박스오피스 순위' && <p>누적 관객수: {movie.audience}</p>}
+                    {(category === '🆕 상영예정작' ) && <p>{movie.releaseDate} 개봉</p>}
+                    {(category === '🌟 별점이 높은 작품' ) && <p>⭐ {movie.rating}</p>}
                     </span>
                   </Link>
                 </div>
