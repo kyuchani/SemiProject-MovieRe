@@ -180,13 +180,13 @@ const Header = () => {
       <div className={`hamburger-menu ${menuOpen ? 'open' : ''}`}>
         <ul>
           <li>
-            <Nav.Link href="#">🎬 박스 오피스 순위</Nav.Link>
+            <Nav.Link href="/boxmore">🎬 박스 오피스 순위</Nav.Link>
           </li>
           <li>
-            <Nav.Link href="#">🆕 상영예정작</Nav.Link>
+            <Nav.Link href="/res">🆕 상영예정작</Nav.Link>
           </li>
           <li>
-            <Nav.Link href="#">🌟 별점이 높은 작품</Nav.Link>
+            <Nav.Link href="/rating">🌟 별점이 높은 작품</Nav.Link>
           </li>
           <li>
             <Nav.Link href="/review">✍️ 리뷰 쓰기</Nav.Link>

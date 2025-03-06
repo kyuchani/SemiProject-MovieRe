@@ -79,6 +79,20 @@ const MovieList = () => {
     setIsDragging(false);
   };
 
+  // Conditional mapping for the "더보기" link path
+  const getMoreLink = (category) => {
+    switch (category) {
+      case '🎬 박스오피스 순위':
+        return '/boxmore';
+      case '🆕 상영예정작':
+        return '/res';
+      case '🌟 별점이 높은 작품':
+        return '/rating';
+      default:
+        return '/';
+    }
+  };
+
   return (
     <div className="movie-list-container">
       {categories.map((category, index) => (
@@ -86,7 +100,7 @@ const MovieList = () => {
           <hr className="hr" />
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
             <h4 style={{ marginBottom: '25px', marginLeft: '5px', marginTop: '4px' }}>{category}</h4>
-            <Link to={`/more/${category}`} style={{ fontSize: '14px', color: '#a73c2e', textDecoration: 'none' }}>
+            <Link to={getMoreLink(category)} style={{ fontSize: '14px', color: '#a73c2e', textDecoration: 'none' }}>
               더보기
             </Link>
           </div>

@@ -16,6 +16,9 @@ import Call from './pages/Call';
 import Privacy from './pages/privacyPage';
 import Info from './pages/infoPage';
 import { Outlet } from 'react-router-dom'; // Outlet import
+import MovieRatingList from './pages/MovieRatingList';
+import OutOfTheaters from './pages/OutOfTheaters';
+import BoxMore from './pages/BoxMore';
 
 function App() {
   return (
@@ -32,6 +35,9 @@ function App() {
             <Route path="/detail/:movieId" element={<MovieDetail />} />
             <Route path="/review" element={<ReviewPage />} />
             <Route path="/review/write" element={<ReviewForm />} />
+            <Route path="/rating" element={<MovieRatingList />} />
+            <Route path="/boxmore" element={<BoxMore />} />
+            <Route path="/res" element={<OutOfTheaters />} />
           </Route>
 
           {/* Header와 Footer 없이 렌더링되는 라우트 */}
