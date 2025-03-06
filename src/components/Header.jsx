@@ -97,6 +97,9 @@ const Header = () => {
           <li>
             <Nav.Link href="#">🌟 별점이 높은 작품</Nav.Link>
           </li>
+          <li>
+            <Nav.Link href="/review">✍️ 리뷰 쓰기</Nav.Link>
+          </li>
         </ul>
       </div>
     </>

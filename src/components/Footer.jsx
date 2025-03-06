@@ -20,17 +20,17 @@ const Footer = () => {
           </a>
         </div>
         <div className="footer-links">
-          <a href="#">
+          <a href="/info">
             <span>이용약관</span>
             <span>|</span>
           </a>
 
-          <a href="#">
+          <a href="privacy">
             <span>개인정보처리방침</span>
             <span>|</span>
           </a>
 
-          <a href="#">
+          <a href="/call">
             <span>문의하기</span>
             <span></span>
           </a>

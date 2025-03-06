@@ -40,7 +40,7 @@ const ReviewForm = () => {
       <h3 className="review-title">리뷰 쓰기</h3>
 
       <form className="review-write-container" onSubmit={handleReviewSubmit}>
-        <img src="/src/images/profile.png" alt="Profile" />
+        <img src="/src/images/none.png" alt="Profile" />
         <div className="review-input">
           <div className="star-rating">
             {/* 별점 선택 영역 */}
