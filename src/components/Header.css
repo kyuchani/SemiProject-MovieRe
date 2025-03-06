@@ -183,3 +183,24 @@
   min-width: 1440px;
   border-bottom: 1px solid white; /* 하얀색 밑줄 */
 }
+
+/* 자동완성 */
+.autocomplete-list {
+  position: absolute;
+  top: 60px; /* Adjust according to your layout */
+  margin-left: 485px;
+  width: 35%;
+  max-height: 200px;
+  overflow-y: auto;
+  background-color: rgb(247, 247, 247);
+  border: 1px solid #ccc;
+  z-index: 10;
+}
+
+.autocomplete-list .list-group-item {
+  cursor: pointer;
+}
+
+.autocomplete-list .list-group-item:hover {
+  background-color: #ffffff;
+}

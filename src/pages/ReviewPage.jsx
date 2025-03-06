@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { FaThumbsUp, FaThumbsDown, FaStar } from 'react-icons/fa';
+import { FaThumbsUp, FaThumbsDown, FaStar, FaTrash } from 'react-icons/fa';
 import './ReviewPage.css';
 
 const ReviewPage = () => {
@@ -12,7 +12,7 @@ const ReviewPage = () => {
     setReviews(storedReviews);
   }, []);
 
-  //  추천 & 비추천 증가 함수
+  // 추천 & 비추천 증가 함수
   const handleVote = (index, type) => {
     const updatedReviews = [...reviews];
 
@@ -23,14 +23,21 @@ const ReviewPage = () => {
     }
 
     setReviews(updatedReviews);
-    localStorage.setItem('reviews', JSON.stringify(updatedReviews)); //  `localStorage`에 저장
+    localStorage.setItem('reviews', JSON.stringify(updatedReviews)); // `localStorage`에 저장
+  };
+
+  // 리뷰 삭제 함수
+  const handleDelete = (index) => {
+    const updatedReviews = reviews.filter((_, i) => i !== index);
+    setReviews(updatedReviews);
+    localStorage.setItem('reviews', JSON.stringify(updatedReviews)); // `localStorage`에서 삭제된 리뷰 반영
   };
 
   return (
     <div className="review-list-container">
       <div className="review-header">
         <h2>리뷰 / 댓글</h2>
-        <button onClick={() => navigate('/review/write')}> 리뷰 작성</button>
+        <button onClick={() => navigate('/review/write')}>리뷰 작성</button>
       </div>
 
       <ul>
@@ -38,26 +45,27 @@ const ReviewPage = () => {
           <p>아직 작성된 리뷰가 없습니다.</p>
         ) : (
           reviews.map((review, index) => (
-            <li key={index} className="review-item">
-              {/* 프로필 이미지 */}
-              <img src="/src/images/profile.png" alt="Profile" />
+            <li key={index} className={`review-item ${index % 2 === 0 ? 'left' : 'right'}`}>
+              <img src="/src/images/none.png" alt="Profile" />
 
               <div className="review-content">
-                <p className="review-username">username</p> {/* 나중에 로그인한 유저명으로 변경 */}
-                {/* 별점 */}
+                {/* Display the username (nickname) */}
+                <p className="review-username">{review.username}</p> {/* Updated to display review.username */}
                 <div className="review-rating">
                   <FaStar className="rating-star" /> <span>{review.rating}</span>
                 </div>
                 <p className="review-text">{review.text}</p>
               </div>
 
-              {/* 추천 비추천 */}
               <div className="review-vote">
                 <button onClick={() => handleVote(index, 'like')}>
                   <FaThumbsUp className="vote-icon" /> {review.likes || 0}
                 </button>
                 <button onClick={() => handleVote(index, 'dislike')}>
                   <FaThumbsDown className="vote-icon" /> {review.dislikes || 0}
+                </button>
+                <button onClick={() => handleDelete(index)}>
+                  <FaTrash className="delete-icon" />
                 </button>
               </div>
             </li>

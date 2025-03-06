@@ -29,7 +29,6 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
- 
   padding: 10px;
   border-radius: 8px;
   background: #222;
@@ -42,11 +41,51 @@
   border-radius: 20%;
   margin-right: 10px;
 }
+
 .review-input {
   display: flex;
   flex-direction: column; 
   align-items: flex-start;
   width: 100%;
+}
+
+/* ✅ 닉네임과 별점 입력 필드를 나란히 배치 */
+.nickname-rating-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  margin-bottom: 8px;
+}
+
+.review-write-container input {
+  width: 40%;
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #555;
+  border-radius: 8px;
+  background: #222;
+  color: white;
+  resize: none;
+  outline: none;
+}
+
+/* ✅ 별점 영역 (리뷰 작성 시) */
+.star-rating {
+  display: flex;
+  gap: 4px;
+  margin-left: 10px;
+}
+
+.star {
+  font-size: 22px;
+  color: gray;
+  cursor: pointer;
+  transition: color 0.2s ease-in-out;
+}
+
+.star.selected {
+  color: gold; /* 선택된 별은 노란색 */
 }
 
 /* ✅ 리뷰 입력 필드 */
@@ -56,7 +95,6 @@
   padding: 8px;
   font-size: 14px;
   border: 1px solid #555;
-  
   border-radius: 8px;
   background: #222;
   color: white;
@@ -81,23 +119,4 @@
 
 .review-write-container button:hover {
   background: darkred;
-}
-
-/* ✅ 별점 영역 (리뷰 작성 시) */
-.star-rating {
-  display: flex;
-  width: 200px;
-  gap: 4px;
-  margin-bottom: 8px;
-}
-
-.star {
-  font-size: 22px;
-  color: gray;
-  cursor: pointer;
-  transition: color 0.2s ease-in-out;
-}
-
-.star.selected {
-  color: gold; /*선택된 별은 노란색 */
 }

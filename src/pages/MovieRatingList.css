@@ -1,0 +1,56 @@
+.movie-list-container {
+  text-align: center;
+  padding: 20px;
+  background-color: black;
+  color: white;
+}
+
+.sort-button {
+  background-color: #ffcc00;
+  border: none;
+  padding: 10px 15px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.sort-button:hover {
+  background-color: #ffdd44;
+}
+
+.movie-list {
+  display: flex;
+  gap: 15px;
+  overflow-x: auto;
+  padding: 10px;
+  justify-content: center; /* ✅ 중앙 정렬 */
+}
+
+/* ✅ 카드 스타일 */
+.movie-card {
+  background-color: #222;
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center;
+  min-width: 150px;
+  width: 180px; /* 🔥 카드 크기 고정 */
+}
+
+/* ✅ 이미지 크기 통일 */
+.movie-card img {
+  width: 100%; /* 🔥 부모 크기에 맞춤 */
+  height: 250px; /* 🔥 동일한 높이 유지 */
+  object-fit: cover; /* 이미지 비율 유지하며 크롭 */
+  border-radius: 5px;
+}
+
+.movie-card h3 {
+  font-size: 16px;
+  margin: 5px 0;
+}
+
+.movie-card p {
+  font-size: 14px;
+  color: #ddd;
+}

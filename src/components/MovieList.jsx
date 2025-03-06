@@ -1,7 +1,7 @@
 import { useRef, useState } from 'react';
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 import { Link } from 'react-router-dom'; // ✅ React Router의 Link 컴포넌트 사용
-import "./MovieList.css"
+import './MovieList.css';
 
 const moviesData = {
   '🎬 박스오피스 순위': [
@@ -12,10 +12,15 @@ const moviesData = {
     { title: '괜찮아 괜찮아 괜찮아!', image: '/src/images/okay.jpeg', link: '/detail/okay', audience: '650,000' },
     { title: '울프맨', image: '/src/images/wolfman.jpeg', link: '/detail/wolfman', audience: '600,000' },
     { title: '컴플리트 언노운', image: '/src/images/unknown.jpeg', link: '/detail/unknown', audience: '550,000' },
-    { title: '첫 번째 키스', image: '/src/images/first-kiss.jpeg', link: '/deatil/first-kiss', audience: '500,000' },
+    { title: '첫 번째 키스', image: '/src/images/first-kiss.jpeg', link: '/detail/first-kiss', audience: '500,000' },
   ],
   '🆕 상영예정작': [
-    { title: '플레이브 대쉬 인시네마', image: '/src/images/dash.jpeg', link: '/detail/dash', releaseDate: '2025-03-10' },
+    {
+      title: '플레이브 대쉬 인시네마',
+      image: '/src/images/dash.jpeg',
+      link: '/detail/dash',
+      releaseDate: '2025-03-10',
+    },
     { title: '화이트 버드', image: '/src/images/whitebird.jpeg', link: '/detail/whitebird', releaseDate: '2025-03-15' },
     { title: '위플래쉬', image: '/src/images/whiplash.jpeg', link: '/detail/whiplash', releaseDate: '2025-03-20' },
     { title: '에밀리아 페레즈', image: '/src/images/Emilia.jpeg', link: '/detail/Emilia', releaseDate: '2025-03-25' },
@@ -26,7 +31,7 @@ const moviesData = {
     { title: '호조', image: '/src/images/hozo.jpeg', link: '/detail/hozo', releaseDate: '2025-04-12' },
   ],
   '🌟 별점이 높은 작품': [
-    { title: '이찬원 콘서트 찬가: 디어 마이 찬스', image: '/src/images/Lee.jpg', link: 'detail.Lee', rating: '4.9' },
+    { title: '이찬원 콘서트 찬가: 디어 마이 찬스', image: '/src/images/Lee.jpg', link: 'detail/Lee', rating: '4.9' },
     { title: '힘내라 대한민국', image: '/src/images/fighting-korea.jpeg', link: '/detail/korea', rating: '4.7' },
     { title: '퇴마록', image: '/src/images/lok.jpeg', link: '/detail/lok', rating: '4.6' },
     { title: '더 폴: 디렉터스 컷', image: '/src/images/fall.jpeg', link: '/detail/fall', rating: '4.8' },
@@ -80,8 +85,8 @@ const MovieList = () => {
         <div key={index}>
           <hr className="hr" />
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-            <h4 style={{marginBottom:"25px",marginLeft:"5px" ,marginTop:"4px"}}>{category}</h4>
-            <Link to={`/more/${category}`} style={{ fontSize: '14px', color: '#a73c2e', textDecoration: 'none'} }>
+            <h4 style={{ marginBottom: '25px', marginLeft: '5px', marginTop: '4px' }}>{category}</h4>
+            <Link to={`/more/${category}`} style={{ fontSize: '14px', color: '#a73c2e', textDecoration: 'none' }}>
               더보기
             </Link>
           </div>
@@ -101,12 +106,12 @@ const MovieList = () => {
                 <div key={idx} className="movie-item">
                   <Link to={movie.link} style={{ color: 'inherit', textDecoration: 'none' }}>
                     <img src={movie.image} alt={movie.title} />
-                    <p className='movieTitle'>{movie.title}</p>
+                    <p className="movieTitle">{movie.title}</p>
                     {/* 여기에서 카테고리별 추가 정보를 출력합니다 */}
-                    <span className='category'>
-                    {category === '🎬 박스오피스 순위' && <p>누적 관객수: {movie.audience}</p>}
-                    {(category === '🆕 상영예정작' ) && <p>{movie.releaseDate} 개봉</p>}
-                    {(category === '🌟 별점이 높은 작품' ) && <p>⭐ {movie.rating}</p>}
+                    <span className="category">
+                      {category === '🎬 박스오피스 순위' && <p>누적 관객수: {movie.audience}</p>}
+                      {category === '🆕 상영예정작' && <p>{movie.releaseDate} 개봉</p>}
+                      {category === '🌟 별점이 높은 작품' && <p>⭐ {movie.rating}</p>}
                     </span>
                   </Link>
                 </div>
