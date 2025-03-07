@@ -19,7 +19,10 @@
       "/src/images/lok_cast1.jpg",
       "/src/images/lok_cast2.jpg",
       "/src/images/lok_cast3.jpg"
-    ]
+    ],
+    "audience": ["320,000"],
+    "releaseDate": ["2025-02-21"],
+    "rating": ["8.95"]
   },
   {
     "id": "captain",
@@ -42,7 +45,10 @@
       "/src/images/captain_cast2.jpg",
       "/src/images/captain_cast3.jpg",
       "/src/images/captain_cast4.jpg"
-    ]
+    ],
+    "audience": ["1,600,000"],
+    "releaseDate": ["2025-02-12"],
+    "rating": ["8.59"]
   },
   {
     "id": "mickey",
@@ -65,7 +71,11 @@
       "/src/images/mickey17_cast2.jpg",
       "/src/images/mickey17_cast3.jpg",
       "/src/images/mickey17_cast4.jpg"
-    ]
+    ],
+
+    "audience": ["1,530,000"],
+    "releaseDate": ["2025-02-28"],
+    "rating": ["8.34"]
   },
   {
     "id": "korea",
@@ -77,7 +87,11 @@
     "information1": "2025 · 다큐멘터리 · 한국",
     "information2": "1시간 56분 · 12세",
     "scenes": ["/src/images/korea_scene1.jpg", "/src/images/korea_scene2.jpg"],
-    "cast": ["/src/images/none.jpg", "/src/images/korea_director.jpg", "/src/images/korea_cast1.jpg"]
+    "cast": ["/src/images/none.jpg", "/src/images/korea_director.jpg", "/src/images/korea_cast1.jpg"],
+
+    "audience": ["46,000"],
+    "releaseDate": ["2025-02-27"],
+    "rating": ["9.84"]
   },
   {
     "id": "okay",
@@ -100,7 +114,11 @@
       "/src/images/okay_cast2.jpg",
       "/src/images/okay_cast3.jpg",
       "/src/images/okay_cast4.jpg"
-    ]
+    ],
+
+    "audience": ["77,000"],
+    "releaseDate": ["2025-02-26"],
+    "rating": ["8.75"]
   },
   {
     "id": "wolfman",
@@ -123,7 +141,11 @@
       "/src/images/wolfman_cast2.jpg",
       "/src/images/wolfman_cast3.jpg",
       "/src/images/wolfman_cast4.jpg"
-    ]
+    ],
+
+    "audience": ["3,262"],
+    "releaseDate": ["2025-03-05"],
+    "rating": ["4.33"]
   },
   {
     "id": "unknown",
@@ -146,7 +168,11 @@
       "/src/images/unknown_cast2.jpg",
       "/src/images/unknown_cast3.jpg",
       "/src/images/unknown_cast4.jpg"
-    ]
+    ],
+
+    "audience": ["45,000"],
+    "releaseDate": ["2025-02-26"],
+    "rating": ["8.79"]
   },
   {
     "id": "first-kiss",
@@ -169,7 +195,11 @@
       "/src/images/first-kiss_cast2.jpg",
       "/src/images/first-kiss_cast3.jpg",
       "/src/images/first-kiss_cast4.jpg"
-    ]
+    ],
+
+    "audience": ["38,000"],
+    "releaseDate": ["2025-02-26"],
+    "rating": ["8.44"]
   },
   {
     "id": "dash",
@@ -186,7 +216,11 @@
       "/src/images/dash_scene3.jpeg",
       "/src/images/dash_scene4.jpeg"
     ],
-    "cast": []
+    "cast": [],
+
+    "audience": [""],
+    "releaseDate": ["2025-03-07"],
+    "rating": [""]
   },
   {
     "id": "whitebird",
@@ -210,7 +244,11 @@
       "/src/images/whitebird_cast4.jpeg",
       "/src/images/whitebird_cast5.jpeg",
       "/src/images/whitebird_cast6.jpeg"
-    ]
+    ],
+
+    "audience": [""],
+    "releaseDate": ["2025-03-12"],
+    "rating": [""]
   },
   {
     "id": "whiplash",
@@ -235,7 +273,11 @@
       "/src/images/whiplash_cast4.jpg",
       "/src/images/whiplash_cast5.jpg",
       "/src/images/whiplash_cast6.jpg"
-    ]
+    ],
+
+    "audience": ["1,640,000"],
+    "releaseDate": ["2015-03-12"],
+    "rating": ["8.88"]
   },
   {
     "id": "Emilia",
@@ -257,7 +299,11 @@
       "/src/images/none.png",
       "/src/images/Emilia_cast2.jpeg",
       "/src/images/Emilia_cast3.jpeg"
-    ]
+    ],
+
+    "audience": [""],
+    "releaseDate": ["2025-03-12"],
+    "rating": [""]
   },
   {
     "id": "novocaine",
@@ -280,7 +326,11 @@
       "/src/images/none.png",
       "/src/images/novo_cast1.jpeg",
       "/src/images/novo_cast2.jpeg"
-    ]
+    ],
+
+    "audience": ["208"],
+    "releaseDate": ["2025-03-12"],
+    "rating": [""]
   },
   {
     "id": "breath",
@@ -302,7 +352,11 @@
       "/src/images/breath_cast2.jpeg",
       "/src/images/breath_cast3.jpeg",
       "/src/images/none.png"
-    ]
+    ],
+
+    "audience": [""],
+    "releaseDate": ["2025-03-12"],
+    "rating": [""]
   },
   {
     "id": "somebody",
@@ -327,7 +381,11 @@
       "/src/images/some_cast4.jpeg",
       "/src/images/some_cast5.jpeg",
       "/src/images/some_cast6.jpeg"
-    ]
+    ],
+
+    "audience": ["2,307"],
+    "releaseDate": ["2025-03-12"],
+    "rating": [""]
   },
   {
     "id": "wildtour",
@@ -344,7 +402,11 @@
       "/src/images/wild_scene3.png",
       "/src/images/wild_scene4.png"
     ],
-    "cast": ["/src/images/wild_cast1.jpeg"]
+    "cast": ["/src/images/wild_cast1.jpeg"],
+
+    "audience": ["1,766"],
+    "releaseDate": ["2025-03-12"],
+    "rating": [""]
   },
   {
     "id": "hozo",
@@ -369,7 +431,11 @@
       "/src/images/hozo_cast4.jpeg",
       "/src/images/hozo_cast5.jpeg",
       "/src/images/hozo_cast6.jpeg"
-    ]
+    ],
+
+    "audience": ["1,946"],
+    "releaseDate": ["2025-03-12"],
+    "rating": [""]
   },
   {
     "id": "wolf",
@@ -386,7 +452,11 @@
       "/src/images/wolf_scene3.jpeg",
       "/src/images/wolf_scene4.jpeg"
     ],
-    "cast": []
+    "cast": [],
+
+    "audience": ["17,000"],
+    "releaseDate": ["2020-12.24"],
+    "rating": ["8.52"]
   },
   {
     "id": "titan",
@@ -403,7 +473,11 @@
       "/src/images/titan_scene3.jpeg",
       "/src/images/titan_scene4.jpeg"
     ],
-    "cast": []
+    "cast": [],
+
+    "audience": [""],
+    "releaseDate": ["2025-03-13"],
+    "rating": [""]
   },
   {
     "id": "hell",
@@ -421,7 +495,11 @@
       "/src/images/hell_cast3.jpeg",
       "/src/images/hell_cast4.jpeg",
       "/src/images/hell_cast5.jpeg"
-    ]
+    ],
+
+    "audience": [""],
+    "releaseDate": ["2025-03-13"],
+    "rating": [""]
   },
   {
     "id": "gourme",
@@ -444,7 +522,11 @@
       "/src/images/gourme_cast3.jpeg",
       "/src/images/gourme_cast4.jpeg",
       "/src/images/gourme_cast5.jpeg"
-    ]
+    ],
+
+    "audience": [""],
+    "releaseDate": ["2025-03-19"],
+    "rating": [""]
   },
   {
     "id": "flow",
@@ -461,7 +543,11 @@
       "/src/images/flow_scene3.jpeg",
       "/src/images/flow_scene4.jpeg"
     ],
-    "cast": ["/src/images/flow_cast1.jpeg"]
+    "cast": ["/src/images/flow_cast1.jpeg"],
+
+    "audience": ["4,933"],
+    "releaseDate": ["2025-03-19"],
+    "rating": [""]
   },
   {
     "id": "companion",
@@ -478,7 +564,11 @@
       "/src/images/companion_scene3.jpeg",
       "/src/images/companion_scene4.jpeg"
     ],
-    "cast": ["/src/images/companion_cast1.jpeg"]
+    "cast": ["/src/images/companion_cast1.jpeg"],
+
+    "audience": [""],
+    "releaseDate": ["2025-03-19"],
+    "rating": [""]
   },
   {
     "id": "three",
@@ -500,7 +590,11 @@
       "/src/images/three_cast2.jpeg",
       "/src/images/three_cast3.jpeg",
       "/src/images/three_cast4.jpeg"
-    ]
+    ],
+
+    "audience": ["247"],
+    "releaseDate": ["2025-03-19"],
+    "rating": [""]
   },
   {
     "id": "snow white",
@@ -517,7 +611,11 @@
       "/src/images/snow_scene3.jpeg",
       "/src/images/snow_scene4.jpeg"
     ],
-    "cast": ["/src/images/snow_cast1.jpeg", "/src/images/snow_cast2.jpeg", "/src/images/snow_cast3.jpeg"]
+    "cast": ["/src/images/snow_cast1.jpeg", "/src/images/snow_cast2.jpeg", "/src/images/snow_cast3.jpeg"],
+
+    "audience": [""],
+    "releaseDate": ["2025-03-19"],
+    "rating": [""]
   },
   {
     "id": "warfare",
@@ -539,7 +637,11 @@
       "/src/images/warfare_cast2.jpeg",
       "/src/images/warfare_cast3.jpeg",
       "/src/images/warfare_cast4.jpeg"
-    ]
+    ],
+
+    "audience": [""],
+    "releaseDate": ["2025-03-19"],
+    "rating": [""]
   },
   {
     "id": "women",
@@ -556,7 +658,11 @@
       "/src/images/women_scene3.jpeg",
       "/src/images/women_scene4.jpeg"
     ],
-    "cast": ["/src/images/none.png"]
+    "cast": ["/src/images/none.png"],
+
+    "audience": [""],
+    "releaseDate": ["2025-03-19"],
+    "rating": [""]
   },
   {
     "id": "soul",
@@ -578,7 +684,11 @@
       "/src/images/soul_cast2.jpeg",
       "/src/images/soul_cast3.jpeg",
       "/src/images/soul_cast4.jpeg"
-    ]
+    ],
+
+    "audience": ["1,642"],
+    "releaseDate": ["2025-03-19"],
+    "rating": [""]
   },
   {
     "id": "blackbag",
@@ -601,7 +711,11 @@
       "/src/images/black_cast3.jpeg",
       "/src/images/black_cast4.jpeg",
       "/src/images/black_cast5.jpeg"
-    ]
+    ],
+
+    "audience": [""],
+    "releaseDate": ["2025-03-19"],
+    "rating": [""]
   },
   {
     "id": "Lee",
@@ -618,7 +732,11 @@
       "/src/images/Lee_scene3.jpg",
       "/src/images/Lee_scene4.jpg"
     ],
-    "cast": ["/src/images/Lee_director.jpg", "/src/images/Lee_cast1.jpg", "/src/images/none.jpg"]
+    "cast": ["/src/images/Lee_director.jpg", "/src/images/Lee_cast1.jpg", "/src/images/none.jpg"],
+
+    "audience": ["35,000"],
+    "releaseDate": ["9.87"],
+    "rating": [""]
   },
   {
     "id": "fall",
@@ -635,7 +753,11 @@
       "/src/images/fall_scene3.jpg",
       "/src/images/fall_scene4.jpg"
     ],
-    "cast": ["/src/images/fall_director.jpg", "/src/images/fall_cast1.jpg", "/src/images/fall_cast2.jpg"]
+    "cast": ["/src/images/fall_director.jpg", "/src/images/fall_cast1.jpg", "/src/images/fall_cast2.jpg"],
+
+    "audience": ["170,000"],
+    "releaseDate": ["2024-12-25"],
+    "rating": ["8.92"]
   },
   {
     "id": "mantion",
@@ -657,7 +779,11 @@
       "/src/images/mantion_cast1.jpg",
       "/src/images/mantion_cast3.jpg",
       "/src/images/mantion_cast4.jpg"
-    ]
+    ],
+
+    "audience": ["35,000"],
+    "releaseDate": ["2025-02-26"],
+    "rating": ["8.85"]
   },
   {
     "id": "secret",
@@ -679,6 +805,10 @@
       "/src/images/secret_cast1.jpg",
       "/src/images/secret_cast2.jpg",
       "/src/images/secret_cast3.jpg"
-    ]
+    ],
+
+    "audience": ["820,000"],
+    "releaseDate": ["2025-01-27"],
+    "rating": ["8.77"]
   }
 ]
