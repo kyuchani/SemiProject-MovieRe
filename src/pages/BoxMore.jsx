@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom'; // Import Link from react-router-dom
-import { FaCircle } from 'react-icons/fa'; // 리액트 아이콘에서 원 모양 아이콘 임포트
+
 
 const BoxMore = () => {
   const [movies, setMovies] = useState([]);
