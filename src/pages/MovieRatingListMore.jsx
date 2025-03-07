@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom'; // Import Link from react-router-dom
-import { FaCircle } from 'react-icons/fa'; // 리액트 아이콘에서 원 모양 아이콘 임포트
+
 
 const BoxMore = () => {
   const [movies, setMovies] = useState([]);
@@ -9,12 +9,14 @@ const BoxMore = () => {
     fetch('/src/components/public/movieExplain.json')
       .then((response) => response.json())
       .then((data) => {
-        // 각 영화의 audience 값을 숫자로 변환하고 정렬
+        // 각 영화의 rating 값을 숫자로 변환하고 내림차순으로 정렬
         const sortedMovies = data.sort((a, b) => {
-          const audienceA = parseInt(a.audience[0].replace(',', '')) || 0;
-          const audienceB = parseInt(b.audience[0].replace(',', '')) || 0;
+          // rating 값을 숫자로 변환
+          const ratingA = a.rating && a.rating[0] ? parseFloat(a.rating[0]) : 0;
+          const ratingB = b.rating && b.rating[0] ? parseFloat(b.rating[0]) : 0;
           
-          return audienceB - audienceA; // 내림차순 정렬
+          // 별점 내림차순 정렬
+          return ratingB - ratingA;
         });
         setMovies(sortedMovies);
       })
@@ -23,10 +25,11 @@ const BoxMore = () => {
 
   return (
     <div>
-      <div style={{ marginLeft: '140px', marginTop: '25px', marginBottom:"20px", fontSize: '26px' }}>🎬 박스 오피스 순위</div>
+      <div style={{ marginLeft: '140px', marginTop: '25px', marginBottom:"20px", fontSize: '26px' }}>🌟 별점이 높은 작품</div>
       <div style={{ display: 'flex', flexWrap: 'wrap', margin: '0 120px' }}>
         {movies.slice(0, 20).map((movie, index) => { // 20개까지만 표시
-          const audience = parseInt(movie.audience[0].replace(',', '')) || 0; // 관람객 수를 숫자로 변환
+          
+          const rating = parseFloat(movie.rating[0]) || 0; // 별점 값
 
           return (
             <div key={index} style={{ position: 'relative', maxWidth: '200px', margin: '0 20px' }}>
@@ -58,10 +61,12 @@ const BoxMore = () => {
                 <p className="movieTitle" style={{ textAlign: 'center', marginTop: '15px', marginBottom: '5px', fontSize: '14px' }}>
                   {movie.title}
                 </p>
-                {/* 관람객 수 표시 */}
-                <p className="audience" style={{ textAlign: 'center', marginBottom: '30px', fontSize: '14px', color: '#918d8d' }}>
-                  관람객 수: {audience.toLocaleString()}명
-                </p>
+
+                {/* 별점 표시 */}
+                <div style={{ textAlign: 'center', marginBottom: '30px' }}>
+                  <span style={{ color: '#FFD700' }}>⭐</span>
+                  <span style={{ fontSize: '14px', color: '#FFD700' }}>{rating}</span>
+                </div>
               </Link>
             </div>
           );

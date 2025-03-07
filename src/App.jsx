@@ -16,8 +16,8 @@ import Call from './pages/Call';
 import Privacy from './pages/privacyPage';
 import Info from './pages/infoPage';
 import { Outlet } from 'react-router-dom'; // Outlet import
-import MovieRatingList from './pages/MovieRatingList';
-import OutOfTheaters from './pages/OutOfTheaters';
+import MovieRatingList from './pages/MovieRatingListMore';
+import OutOfTheaters from './pages/OutOfTheatersMore';
 import BoxMore from './pages/BoxMore';
 
 function App() {
