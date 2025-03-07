@@ -16,10 +16,10 @@
       "/src/images/lok_screen4.png"
     ],
     "cast": [
-      "/src/images/lok_director.jpg",
       "/src/images/lok_cast1.jpg",
       "/src/images/lok_cast2.jpg",
-      "/src/images/lok_cast3.jpg"
+      "/src/images/lok_cast3.jpg",
+      "/src/images/lok_cast4.jpg"
     ],
     "audience": ["320,000"],
     "releaseDate": ["2025-02-21"],

@@ -1,7 +1,9 @@
 const Privacy = () => {
   return (
     <div className="p-6">
-      <h1 className="text-2xl font-bold mb-4">개인정보처리방침</h1>
+      <h1 className="text-2xl font-bold mb-4 " style={{ marginTop: '200px' }}>
+        개인정보처리방침
+      </h1>
       <p>본 개인정보처리방침은 이용자의 개인정보 보호와 관련하여 회사의 정책을 안내합니다.</p>
 
       <h2 className="text-xl font-semibold mt-4">제 1 조 (수집하는 개인정보)</h2>

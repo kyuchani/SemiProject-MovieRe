@@ -43,7 +43,7 @@
   width: 200px;
   height: 320px; /* 높이 조정 */
   cursor: pointer;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
 
 .movie-item img {

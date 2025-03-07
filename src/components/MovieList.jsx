@@ -104,7 +104,7 @@ const MovieList = () => {
               더보기
             </Link>
           </div>
-          <div className="movie-list-wrapper">
+          <div className="movie-list-wrapper" >
             <button className="scroll-btn left" onClick={() => scrollLeftHandler(index)}>
               <FaChevronLeft />
             </button>
@@ -118,14 +118,14 @@ const MovieList = () => {
             >
               {moviesData[category].map((movie, idx) => (
                 <div key={idx} className="movie-item">
-                  <Link to={movie.link} style={{ color: 'inherit', textDecoration: 'none' }}>
+                  <Link to={movie.link} style={{ color: 'inherit', textDecoration: 'none'}}>
                     <img src={movie.image} alt={movie.title} />
                     <p className="movieTitle">{movie.title}</p>
                     {/* 여기에서 카테고리별 추가 정보를 출력합니다 */}
                     <span className="category">
-                      {category === '🎬 박스오피스 순위' && <p>누적 관객수: {movie.audience}</p>}
-                      {category === '🆕 상영예정작' && <p>{movie.releaseDate} 개봉</p>}
-                      {category === '🌟 별점이 높은 작품' && <p>⭐ {movie.rating}</p>}
+                      {category === '🎬 박스오피스 순위'}
+                      {category === '🆕 상영예정작'}
+                      {category === '🌟 별점이 높은 작품'}
                     </span>
                   </Link>
                 </div>

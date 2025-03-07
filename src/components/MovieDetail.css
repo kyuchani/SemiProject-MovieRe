@@ -102,7 +102,7 @@
   display: flex;
   overflow-x: hidden; /* 넘치는 스틸컷 숨기기 */
   scroll-behavior: smooth;
-  width: width: 1157px; /* 보여지는 영역 */
+  width:  1157px; /* 보여지는 영역 */
   gap: 10px;
 }
 
@@ -124,7 +124,7 @@
   font-size: 24px;
   cursor: pointer;
   position: absolute;
-  top: 50%;
+  top: 60%;
   transform: translateY(-50%);
   border-radius: 50%;
   width: 50px;
@@ -134,11 +134,17 @@
 .scene-btn.left,
 .cast-btn.left {
   left: 10px;
+  display: flex;       /* Flexbox layout */
+  align-items: center; /* Center items vertically */
+  justify-content: center; /* Center items horizontally */
 }
 
 .scene-btn.right,
 .cast-btn.right {
   right: 10px;
+  display: flex;       /* Flexbox layout */
+  align-items: center; /* Center items vertically */
+  justify-content: center; /* Center items horizontally */
 }
 
 .scene-btn:hover,

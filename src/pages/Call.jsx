@@ -1,6 +1,6 @@
 const Call = () => {
   return (
-    <div className="p-6">
+    <div className="p-6" style={{ marginTop: '200px' }}>
       <h1 className="text-2xl font-bold mb-4">문의하기</h1>
       <h4>서비스 이용 중 궁금한 사항이 있거나 도움이 필요하시면 아래 연락처로 문의해주세요.</h4>
 

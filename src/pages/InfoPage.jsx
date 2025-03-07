@@ -1,7 +1,7 @@
 const Info = () => {
   return (
     <div className="p-6">
-      <h1 className="text-2xl font-bold mb-4">이용약관</h1>
+      <h1 className="text-2xl font-bold mb-4 " style={{marginTop:"200px"}}>이용약관</h1>
       <p>본 이용약관은 서비스 이용과 관련하여 필요한 내용을 규정합니다.</p>
 
       <h2 className="text-xl font-semibold mt-4">제 1 조 (목적)</h2>
